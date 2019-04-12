@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../image/icons8-google-48 (1).png">
+    <title>EXAMEN</title>
+</head>
+<body background="../image/car.jpg">
+    <header id="cabecera">
+        <img src="../image/logoexa.png" alt="" id="logo">
+        <label id="ti">Sistema De Ventas - Exa 01</label>
+        <hr color="blue">
+    </header>
+        
+    <nav id="navegacion">
+            <div class="b"><input type="submit" onclick="inicio()" value="Inicio" id="ini"></div>
+            <div class="b"><input type="submit" onclick="venta()" value="Venta" id="ven"></div>
+            <div class="b"><input type="submit" onclick="reporte()" value="Reportes" id="rep"></div>            
+            <div class="b"><input type="submit" onclick="cliente()" value="Clientes" id="cli"></div>
+            <div class="b"><input type="submit" onclick="producto()" value="Producto" id="pro"></div>
+    </nav>
+    <aside id="contenido">
+            
+        <div id="inicio">
+            <h2 id="bienvenida">Bienvenido al Sistema de Ventas</h2>
+        </div>
+
+        <div id="venta">
+            <label for="z" id="ve">Ventas</label>
+            <hr><br>
+            <label style="margin-left: 20px; font-size: 20px">Cliente:</label>
+                    <input type="search" id="buscar" placeholder="Cliente..">
+                    <input type="submit" value="Buscar" id="buscar"><br>
+                    <input type="submit" value="Producto" id="carrito"><br>
+                    
+                            <input type="text" id="productos" placeholder="Producto"></th>
+                            <input type="text" id="precio" placeholder="Precio.."></th>
+                            <input type="text" id="cantidad" placeholder="Cantidad"></th>
+                        
+                    <input type="submit" value="Enviar" id="enviar" onclick="enviar()">
+        </div>
+        <div id="reporte">
+                <h4 id="c">Reportes</h4>
+                <hr><br>
+               <table id="tabla1">
+                   <thead>
+                       <th>CODIGO</th>
+                       <th>NOMBRES</th>
+                       <th>APELLIDOS</th>
+                       <th>DNI</th>
+                       <th>ACCION</th>
+                   </thead>
+                   <tbody>
+
+                   </tbody>
+               </table>
+        </div>
+        <div id="cliente">
+                <h5 id="cl">Clientes</h5>
+                 <hr><br>
+                <table id="tabla2">
+                    <thead>
+                        <th>Venta</th>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th>Accion</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+        
+        <div id="producto">
+                <h6 id="pr">Productos</h6>
+                <hr><br>
+                <table id="tabla3">
+                    <thead>
+                        <th>Producto</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Stock</th>
+                        <th>Accion</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    </aside>    
+        <script src="../js/script.js"></script>
+</body>
+</html>
